@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Lottery</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Lotto Numbers Requested: <span id="size">0</span></h1>
+			</div>
+			<div id="content">
+				<div id="buttonStart" onclick="start()" class="show">Start</div>
+				<h2 id="numbersAre" class="hide">Your numbers are...</h2><br>
+				<span id="numbers"></span>
+			</div>
+			<div id="buttons">
+				<div id="buttonUp" onclick="increaseSize()">More Numbers</div>
+				<div id="buttonDown" onclick="decreaseSize()">Less Numbers</div>
+				<div id="buttonReroll" onclick="generateNumbers();">Roll Again</div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

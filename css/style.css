@@ -1,0 +1,110 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+#container {
+  text-align: center;
+  width: 75%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: FloralWhite;
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "buttons content content content"
+    "buttons content content content";
+}
+#header {
+  grid-area: header;
+}
+#content {
+  grid-area: content;
+}
+#buttons {
+  grid-area: buttons;
+}
+#header {
+  height: 120px;
+  background-color: peachpuff;
+}
+#buttonUp,
+#buttonDown,
+#buttonReroll {
+  height: 60px;
+  width: 70%;
+  margin-left: 0;
+  background-color: AntiqueWhite;
+  font-size: 12px;
+  padding-left: 3px;
+  padding-right: 5px;
+  padding-top: 40px;
+}
+#buttonUp:hover,
+#buttonDown:hover,
+#buttonReroll:hover {
+  color: white;
+  background-color: black;
+}
+#buttonStart {
+  text-align: center;
+  font-size: 40px;
+  transition-duration: 0.4s;
+  margin-top: 90px;
+}
+
+#buttonStart:hover {
+  transition-duration: 0.4s;
+  font-size: 50px;
+}
+#buttonUp:hover,
+#buttonDown:hover,
+#buttonReroll:hover,
+#buttonStart:hover {
+  cursor: pointer;
+}
+span {
+  text-decoration: underline;
+  margin: auto;
+}
+h2 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+#numbers {
+  font-size: 20px;
+  height: 10px;
+}
+
+@media (max-width: 830px) {
+  #header {
+    font-size: 80%;
+    padding-top: 25px;
+  }
+  #content h2 {
+    font-size: 110%;
+  }
+  #buttonReroll {
+    height: 50px;
+    padding-bottom: -10px;
+  }
+  #numbers {
+    font-size: 20px;
+  }
+  h2 {
+    padding-right: 30px;
+  }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+input {
+  text-align: center;
+}
